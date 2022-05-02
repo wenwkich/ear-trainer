@@ -6,6 +6,8 @@ A very simple ear trainer, support external midi keyboard
 
 ## How does the ear trainer work
 
+You can click on the piano keys like a normal piano
+
 You can select a scale, the piano will have the degree marked
 
 You can also pick how many notes you want to play on the scale
