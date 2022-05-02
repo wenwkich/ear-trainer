@@ -1,6 +1,6 @@
 # ear-trainer
 
-A very simple ear trainer, support external midi keyboard
+A very simple ear trainer, supporting external midi keyboard
 
 ![image](https://user-images.githubusercontent.com/103433278/166184946-3671ed83-99dd-4057-b7d1-de1e3856b6e8.png)
 
