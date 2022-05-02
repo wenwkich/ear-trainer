@@ -26,8 +26,7 @@ export default function Piano({ onNote, scale }: Props) {
 
 const PianoWrapper = styled.div`
   width: 100%;
-  height: 200px;
+  height: 150px;
   max-width: 600px;
   position: relative;
-  margin: 40px auto;
 `;
