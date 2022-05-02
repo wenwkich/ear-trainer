@@ -32,7 +32,7 @@ const PianoKeyWrapper = styled.div<{
   scale: string;
 }>`
   position: relative;
-  border: 4px solid black;
+  border: 2px solid black;
   border-radius: 0.5rem;
   transition: all 0.07s ease;
   display: block;
@@ -41,14 +41,14 @@ const PianoKeyWrapper = styled.div<{
 
   left: ${(props) =>
     isBlackKey(props.midi)
-      ? `${5 + basisCoef(props.scale, props.midi!) * 6.66666}%`
+      ? `${4.5 + basisCoef(props.scale, props.midi!) * 6.66666}%`
       : `${basisCoef(props.scale, props.midi!) * 6.66666}%`};
 
   ${(props) =>
     isBlackKey(props.midi)
       ? `
     position: absolute;
-    width: 3.333333%;
+    width: 4%;
     height: 60%;
     background: #000;
     color: #eee;
