@@ -20,7 +20,7 @@ function App() {
   function onEnabled() {
     // Display available MIDI input devices
     if (WebMidi.inputs.length < 1) {
-      alert("No device detected.");
+      console.error("No device detected.");
     } else {
       WebMidi.inputs.forEach((device, index) => {
         console.log(device);
@@ -34,7 +34,7 @@ function App() {
         piano.keyUp({ note, time: "+1" });
       });
 
-      return (err?: Error) => alert(err);
+      return (err?: Error) => console.error(err);
     }
   }
 
