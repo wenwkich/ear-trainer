@@ -25,18 +25,17 @@ function App() {
       WebMidi.inputs.forEach((device, index) => {
         console.log(device);
       });
+      const synth = WebMidi.inputs[0];
+
+      synth.addListener("noteon", "all", (e) => {
+        const note = Note.fromMidi(e.note.number);
+        setCurrNote(note);
+        piano.keyDown({ note, time: "+0" });
+        piano.keyUp({ note, time: "+1" });
+      });
+
+      return (err?: Error) => alert(err);
     }
-
-    const synth = WebMidi.inputs[0];
-
-    synth.addListener("noteon", "all", (e) => {
-      const note = Note.fromMidi(e.note.number);
-      setCurrNote(note);
-      piano.keyDown({ note, time: "+0" });
-      piano.keyUp({ note, time: "+1" });
-    });
-
-    return (err?: Error) => alert(err);
   }
 
   return (
