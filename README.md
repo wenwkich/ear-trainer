@@ -2,7 +2,7 @@
 
 A very simple ear trainer, supporting external midi keyboard
 
-[Demo](https://626f6385f0345b621c2c5d7d--venerable-zabaione-dad7d5.netlify.app/)
+[Demo](https://functional-ear-trainer.netlify.app)
 
 ![image](https://user-images.githubusercontent.com/103433278/166184946-3671ed83-99dd-4057-b7d1-de1e3856b6e8.png)
 
