@@ -22,9 +22,6 @@ function App() {
     if (WebMidi.inputs.length < 1) {
       console.error("No device detected.");
     } else {
-      WebMidi.inputs.forEach((device, index) => {
-        console.log(device);
-      });
       const synth = WebMidi.inputs[0];
 
       synth.addListener("noteon", "all", (e) => {
