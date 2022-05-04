@@ -74,7 +74,7 @@ const DegreeWrapper = styled.div<{
   width: 2rem;
   height: 2rem;
   ${(props) =>
-    isBlackKey(props.midi) ? `left: -100%; top: 70%;` : `left: 0%; top: 80%;`}
+    isBlackKey(props.midi) ? `left: -50%; top: 70%;` : `left: 0%; top: 80%;`}
   background-color: #aaa;
   border-radius: 100%;
 `;
